@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "Titulo";
+  src: url("../fonts/Dolce Vita Light.ttf");
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #151516;
+}
+
+.seccion {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.caja {
+  width: 100%;
+  margin: auto;
+  max-width: 500px;
+}
+
+.imagen {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.imagen img {
+  margin: auto;
+}
+
+.texto {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+h1 {
+  width: 90%;
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  font-family: "titulo";
+  color: rgb(253, 194, 30);
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: rgb(253, 194, 30);
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+}
+
+.botones {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.botones .boton {
+  font-family: "Poiret One", cursive;
+  padding: 0 30px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.botones .boton:hover {
+  font-weight: 900;
+}
+
+.inicio {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.inicio .imagen {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url(../img/sistema.jpg);
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+}
+.inicio .imagen img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: rotate 40s infinite linear;
+          animation: rotate 40s infinite linear;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.inicio .formulario {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  font-family: "Poiret One", cursive;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.inicio .formulario .datos {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  margin: auto;
+  font-weight: 600;
+  max-width: 600px;
+}
+.inicio .formulario .datos .inputs {
+  width: 100%;
+  margin: auto;
+}
+.inicio .formulario .datos .inputs input {
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px;
+  font-family: "Poiret One", cursive;
+  border-bottom: 0.3px solid rgb(189, 189, 189);
+}
+.inicio .formulario .datos .inputs input:focus {
+  background: transparent;
+  outline: none;
+}
+.inicio .formulario .datos .inputs #enviar {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: "Poiret One", cursive;
+  font-size: 18px;
+}
+.inicio .formulario .datos .inputs #enviar:hover {
+  color: rgb(253, 194, 30);
+}
+.inicio .formulario .datos .inputs .errorMensaje {
+  color: red;
+  font-size: 14px;
+}
+.inicio .formulario .datos .cerrar {
+  cursor: pointer;
+  font-size: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+.inicio .formulario .datos .cerrar:hover {
+  color: red;
+}
+
+.usuario {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.usuario .imagenUsuario {
+  overflow: hidden;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.usuario .imagenUsuario img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: rotate 40s infinite linear;
+          animation: rotate 40s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.otrosSignos {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.otrosSignos .imagen {
+  margin-bottom: 20px;
+}
+.otrosSignos .imagen img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: rotate 40s infinite linear;
+          animation: rotate 40s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.otrosSignos .botones {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.otrosSignos .botones .signo {
+  font-family: "Titulo";
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(253, 194, 30);
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.otrosSignos .botones .signo:hover {
+  font-weight: 900;
+}
+
+.tarot {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tarot .imagenTarot {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url(../img/tarot.jpg);
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.tarot .imagenTarot img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: rotate 40s infinite linear;
+          animation: rotate 40s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.tarot .cartas {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  height: 200px;
+}
+.tarot .cartas .carta {
+  cursor: pointer;
+  width: 25%;
+  margin: auto;
+  border: 1px solid rgba(238, 210, 118, 0.726);
+  display: flex;
+}
+.tarot .cartas .carta img {
+  width: 100%;
+}
+.tarot .cartas .carta:hover {
+  width: 28%;
+}
+
+.cartaElegida {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cartaElegida .imagenCarta {
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+.cartaElegida .imagenCarta img {
+  width: 100%;
+  margin: auto;
+  max-width: 300px;
+  border: solid rgb(255, 255, 255) 1px;
+  border-radius: 5%;
+}/*# sourceMappingURL=estilos.css.map */
